@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+.homepage3 {
+    display: flex;
+    flex-direction: column;
+    top: 90vh;
+    background-image: url(../assests/jorge-rojas.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: 100%; */
+    position: relative;
+    /* width: 100%; */
+    height: 100vh;
+    z-index: 1;
+}
+
+.inter-heading {
+    position: absolute;
+    padding-left: 8vw;
+    padding-top: 1vw;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 4vw;
+    color: black;
+}
+
+.techmeet-text {
+    position: absolute;
+    padding-left: 8.2vw;
+    padding-top: 6vw;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4.4vw;
+    color: #000000;
+}
+
+.right-div-2 {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 22vw;
+    height: 8.5vw;
+    left: 46vw;
+    top: 5vw;
+    background: rgba(255, 245, 10, 0.6);
+}
+
+.problem-statement-text {
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.2vw;
+    text-align: right;
+    display: flex;
+    color: #000000;
+    width: 50%;
+}
+
+.explore-text-2 {
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.1vw;
+    background-color: black;
+    color: #FFFFFF;
+    display: flex;
+    padding: 2%;
+    bottom: 0%;
+    gap: 1vw;
+}
+
+.catered-text {
+    position: absolute;
+    width: 22.63vw;
+    padding-left: 8.2vw;
+    padding-top: 12vw;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.7vw;
+    text-align: justify;
+    color: #000000;
+}
+
+.with-pandemic-text {
+    position: absolute;
+    width: 22.63vw;
+    padding-left: 8.2vw;
+    padding-top: 17vw;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.7vw;
+    text-align: justify;
+    color: #000000;
+}
+
+.contigent-text {
+    position: absolute;
+    width: 22.63vw;
+    padding-left: 8.2vw;
+    padding-top: 23vw;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.7vw;
+    text-align: justify;
+    color: #000000;
+}
+
+.with-pandemic-mobile-text {
+    display: none;
+    position: absolute;
+    width: 22.63vw;
+    padding-left: 8.2vw;
+    padding-top: 17vw;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.7vw;
+    text-align: justify;
+    color: #000000;
+}
+
+.contigent-mobile-text {
+    display: none;
+    position: absolute;
+    width: 22.63vw;
+    padding-left: 8.2vw;
+    padding-top: 23vw;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.7vw;
+    text-align: justify;
+    color: #000000;
+}
+
+@media screen and (max-width: 800px) {
+    .homepage3 {
+        background-image: url(../assests/jorge-rojas--2.png);
+        height: 100vh;
+        /* background-position: center calc(80% - 0vw); */
+        background-position: right top;
+        background-position-y: 20vw;
+        background-repeat: no-repeat;
+        /* background-size: 50vw 90vh; */
+        padding-top: 0vw;
+        top: 25vh;
+    }
+
+    .inter-heading {
+        padding-left: 8vw;
+        padding-top: 30vw;
+        font-size: 8vw;
+    }
+
+    .techmeet-text {
+        padding-left: 8.2vw;
+        padding-top: 38vw;
+        font-size: 8.5vw;
+    }
+
+    .right-div-2 {
+        width: 40vw;
+        height: 23vw;
+        left: 53vw;
+        top: 115vw;
+    }
+
+    .problem-statement-text {
+        font-weight: 800;
+        font-size: 3vw;
+        text-align: left;
+        left: 0%;
+    }
+
+    .explore-text-2 {
+        font-size: 3vw;
+        padding: 0.5%;
+        bottom: 0%;
+        gap: 1vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .with-pandemic-mobile-text {
+        display: flex;
+        width: 50vw;
+        padding-left: 8.2vw;
+        padding-top: 50vw;
+        font-size: 2.5vw;
+    }
+
+    .contigent-mobile-text {
+        display: flex;
+        width: 50vw;
+        padding-left: 8.2vw;
+        padding-top: 80vw;
+        font-size: 2.5vw;
+    }
+
+    .catered-text{
+        display: none;
+    }
+    
+    .with-pandemic-text{
+        display: none;
+    }
+    
+    .contigent-text {
+        display: none;
+    }
+}

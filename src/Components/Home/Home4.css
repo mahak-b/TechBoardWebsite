@@ -1,0 +1,250 @@
+.homepage4 {
+    padding-bottom: 2vw;
+}
+
+.footer-1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    top: 90vh;
+}
+
+.hline {
+    display: flex;
+    justify-content: center;
+}
+
+.hline1 {
+    width: 90%;
+}
+
+.footer-1-sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vline {
+    position: relative;
+    display: flex;
+    left: -9%;
+    /* justify-content: center;
+    align-self: center;
+    justify-self: center; */
+}
+
+.techboard-head {
+    left: 10%;
+    display: flex;
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 5vw;
+    color: #000000;
+}
+
+.socialmedia {
+    position: absolute;
+    /* right: 0%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1% 1%;
+    padding-left: 30vw;
+    row-gap: 2vw;
+    width: 50%;
+    justify-self: right;
+}
+
+.linkedin {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-2 {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    top: 90vh;
+}
+
+.iitg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding-left: 12vw;
+}
+
+.iitg-logo {
+    width: auto;
+    height: auto;
+}
+
+.iitg-name {
+    /* position: absolute; */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    color: #000000;
+}
+
+.techboard-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.techboard-email {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    color: #000000;
+    text-align: left;
+    align-self: flex-start;
+}
+
+.techboard-contact {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    color: #000000;
+    text-align: left;
+    align-self: flex-start;
+}
+
+.techboard-add {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    color: #000000;
+    text-align: left;
+    align-self: flex-start;
+    width: 55%;
+}
+
+.homepage4-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .footer-1 {
+        display: none;
+    }
+
+    .new-foot {
+        display: none;
+    }
+
+    .homepage4-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homepage4-mobile-mid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .iitg-mobile {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        padding: 5%;
+    }
+
+    .socialmedia-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .techboard-iitg {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .techboard {
+        position: relative;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 5vw;
+        color: #000000;
+    }
+
+    .iitg-text-mobile {
+        position: relative;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 3vw;
+        color: #000000;
+    }
+
+    .techboard-info-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        /* padding: 1%; */
+        padding: 1%;
+    }
+
+    .techboard-email-mobile {
+        position: relative;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 4vw;
+        color: #000000;
+    }
+
+    .techboard-contact-mobile {
+        position: relative;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 4vw;
+        color: #000000;
+    }
+
+    .techboard-add-mobile {
+        position: relative;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 3.5vw;
+        color: #000000;
+        text-align: left;
+    }
+
+    .socialmedia-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0% 4%;
+    }
+
+    .linkedin-mobile {
+        position: relative;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2vw;
+        color: #000000;
+    }
+}
