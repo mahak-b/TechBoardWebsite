@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+.homepage2 {
+    display: flex;
+    flex-direction: column;
+    /* top: 110vh; */
+    background-image: url(../assests/Untitled-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: 100%; */
+    position: relative;
+    /* width: 100%; */
+    height: 100vh;
+    z-index: 1;
+    top: 100vh;
+}
+
+.projects-heading {
+    position: absolute;
+    padding-left: 8vw;
+    padding-top: 1vw;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4vw;
+    color: black;
+}
+
+.right-div-1 {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 22vw;
+    height: 8.5vw;
+    left: 47vw;
+    top: 5vw;
+    background: rgba(255, 245, 10, 0.6);
+}
+
+.ind-text {
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.2vw;
+    text-align: right;
+    display: flex;
+    color: #000000;
+    width: 60%;
+}
+
+.explore-text-1 {
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.1vw;
+    background-color: black;
+    color: #FFFFFF;
+    display: flex;
+    padding: 2%;
+    bottom: 0%;
+    gap: 1vw;
+}
+
+.with-text-1 {
+    position: absolute;
+    width: 22.63vw;
+    padding-left: 8.2vw;
+    padding-top: 12vw;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.7vw;
+    text-align: justify;
+    color: #000000;
+}
+
+.many-text-1 {
+    position: absolute;
+    width: 22.63vw;
+    padding-left: 8.2vw;
+    padding-top: 19vw;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.7vw;
+    text-align: justify;
+    color: #000000;
+}
+
+.our-part-text-1 {
+    position: absolute;
+    width: 22.63vw;
+    padding-left: 8.2vw;
+    padding-top: 25vw;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.7vw;
+    text-align: justify;
+    color: #000000;
+}
+
+@media screen and (max-width: 800px) {
+    .homepage2 {
+        background-image: url(../assests/Untitled-21.png);
+        height: 100vh;
+        /* background-position: center calc(80% - 0vw); */
+        background-position: left;
+        /* background-position-x: -35vw; */
+        background-repeat: no-repeat;
+        /* background-size: 100vw 90vh; */
+        padding-top: 0vw;
+        top: 52vh;
+
+    }
+
+    .projects-heading {
+        padding-left: 35vw;
+        padding-top: 55vw;
+        font-size: 8vw;
+    }
+
+    .right-div-1 {
+        width: 55vw;
+        height: 25vw;
+        left: 7vw;
+        top: 127vw;
+    }
+
+    .ind-text {
+        font-weight: 800;
+        font-size: 3vw;
+    }
+
+    .explore-text-1 {
+        font-size: 3vw;
+        padding: 0.5%;
+        bottom: 0%;
+        gap: 1vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .with-text-1 {
+        width: 58vw;
+        padding-left: 35vw;
+        padding-top: 65vw;
+        font-size: 2.5vw;
+    }
+
+    .many-text-1 {
+        width: 58vw;
+        padding-left: 35vw;
+        padding-top: 98vw;
+        font-size: 2.5vw;
+    }
+
+    .our-part-text-1 {
+        display: none;
+    }
+}
