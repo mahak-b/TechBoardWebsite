@@ -8,7 +8,7 @@ import hlinemobile1 from "../assests/Vector 62.png";
 import iitglogomobile from "../assests/IITG_logo (2) 10.png";
 import vlinemobile from "../assests/Vector 61.png";
 
-const Home4 = () => {
+const Footer = () => {
     return (
         <div className='homepage4'>
             <div className="footer-1">
@@ -115,4 +115,4 @@ const Home4 = () => {
     )
 }
 
-export default Home4;
+export default Footer;

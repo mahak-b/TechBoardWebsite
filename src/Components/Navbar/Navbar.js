@@ -23,7 +23,7 @@ export default function Navbar() {
         <div className='navigation'>      
       {(screenWidth > 800) && (<a  href= "/" id = 'Navbar-left' className='link-item'>TECHBOARD.</a> )}
       {(screenWidth <= 800) && (<img src = {require('../assests/navbar-left.png')} alt ="Not_found" className='link-item'></img> )}
-        <a href= "/" className='link-item'>CLUBS</a>
+        <a href= "/club" className='link-item'>CLUBS</a>
         <a href= "/" className='link-item'>EVENTS</a>
         <a href= "/" className='link-item'>TEAM</a>
         <a href= "/" className='link-item'>DOTLINK</a>
