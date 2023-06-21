@@ -1,0 +1,170 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+.project-header{
+  position: relative;
+  font-family: 'Roboto';
+  font-weight: 800;
+  font-size: 7vw;
+  padding:5% 0%;
+  overflow-x: hidden;
+  word-spacing: 3vw;
+}
+.project-first-line{
+  position: relative;
+  left: 2.5vw;
+}
+.project-second-line{
+  white-space: nowrap;
+  position: relative;
+  right:10.5vw;
+}
+.project-name{
+  border-top:0.2vw solid black ;
+  margin:0% 7%;
+  /* margin-bottom: 5%; */
+}
+.project-preview{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto";
+  font-weight: 900;
+  padding: 2% 0%;
+  /* border-bottom:0.2vw solid black ; */
+  font-size: 3.75vw;
+  line-height: 4.25vw;
+}
+.project-name:last-child{
+  border-bottom:0.2vw solid black ;
+}
+.plus-button{
+  background-image: url("../assests/circle.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+}
+.plus{
+  max-width: 100%;
+  border: none;
+  background: none;
+  position: absolute;
+  cursor: pointer;
+}
+.plus img{
+  display: flex;
+  align-items: center;
+  width: 1vw;
+  height: auto;
+}
+.project-overview{
+  display: flex;
+  align-items: stretch;;
+  padding-bottom: 5%;
+}
+.project-data{
+  white-space: pre-wrap;
+  /* word-wrap: break-word; */
+  padding-right:5% ;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.2vw;
+  line-height: 1.5vw;
+}
+.project-image{
+  position: relative;
+  padding-bottom: 5%;
+}
+.project-img1{
+  height: 25vw;
+}
+.project-img2{
+    height: 50vw;
+}
+.project-img3{
+    height: 25vw;
+}
+.project-blank{
+  position: absolute;
+  background: rgba(255, 245, 10, 0.6);
+  width: 22.5vw;
+  height:9vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  top:8.75vw;
+}
+.project-visit{
+  font-family: "Roboto";
+  font-size: 1.4vw;
+  font-weight: 800;
+  text-align: right;
+  padding:1.5%;
+}
+.project-explore-box{
+  background-color: black;
+  padding:3% 5% ;
+  display: flex;
+  align-items: center
+}
+.project-explore-box button{
+  background: none;
+  border: none;
+  display: flex;
+}
+.project-explore-box img{
+  width: 1.2vw;
+  height:1.2vw;
+  cursor: pointer;
+}
+.project-explore{
+  padding-right: 10%;
+  color: white;
+  font-family: "Roboto";
+  font-size: 1vw;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 430px) {
+  .project-header{
+    padding-top: 0%;
+  }
+  .project-name{
+    border-top:0.2vw solid black ;
+    margin:0% 7%;
+  }
+  .project-preview{
+    padding: 3.5% 0%;
+  }
+  .project-data{
+    padding-right:8% ;
+    font-size: 1.5vw;
+  }
+  .project-blank{
+    width:18vw;
+    height:10vw;
+    top:45vw;
+    left:3vw;
+  }
+  .project-visit{
+    font-size: 2vw;
+    line-height:1.75vw;
+    padding-top:2.5% ;
+    }
+  .project-explore-box{
+    padding:5%;
+    padding-right: 0%;
+  }
+  .project-explore{
+    font-size: 1vw;
+    padding-right: 0%;
+    font-weight: 500;
+  }
+  .project-image{
+    position: relative;
+  }
+
+}
