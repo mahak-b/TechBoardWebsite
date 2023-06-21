@@ -3,7 +3,7 @@
   position: relative;
   font-family: 'Roboto';
   font-weight: 800;
-  font-size: 7vw;
+  font-size: 8vw;
   padding:5% 0%;
   overflow-x: hidden;
   word-spacing: 3vw;
@@ -78,13 +78,13 @@
   padding-bottom: 5%;
 }
 .project-img1{
-  height: 25vw;
+  height: 20vw;
 }
 .project-img2{
-    height: 50vw;
+    height: 40vw;
 }
 .project-img3{
-    height: 25vw;
+    height: 20vw;
 }
 .project-blank{
   position: absolute;
