@@ -1,10 +1,10 @@
 export default {
-    name: 'projects',
+    name: 'clubs',
     type: 'document',
-    title: 'Projects',
+    title: 'Clubs',
     fields: [
       {
-        name: 'project_name',
+        name: 'club_name',
         type: 'string',
         title: 'Name'
       },
@@ -19,19 +19,9 @@ export default {
         title: 'Content'
       },
       {
-        name: 'img1',
+        name: 'img',
         type: 'image',
-        title:'Images1'
-      },
-      {
-        name: 'img2',
-        type: 'image',
-        title:'Images2'
-      },
-      {
-        name: 'img3',
-        type: 'image',
-        title:'Images3'
-      },
+        title:'Images'
+      }
     ]
 }
