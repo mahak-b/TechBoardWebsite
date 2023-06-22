@@ -5,6 +5,7 @@ import News from './Components/News/News';
 import Footer from './Components/Home/footer.js';
 import Home from './Components/Home/Home';
 import { BrowserRouter as Router, Route,Switch } from 'react-router-dom';
+import Projects from './Components/Projects/Projects';
 
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
           </Route>
           <Route path="/News">
             <News/>
+          </Route>
+          <Route path="/Projects">
+            <Projects/>
           </Route>
           <Route path="/">
             <Home/>
