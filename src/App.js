@@ -6,6 +6,7 @@ import Footer from './Components/Home/footer.js';
 import Home from './Components/Home/Home';
 import { BrowserRouter as Router, Route,Switch } from 'react-router-dom';
 import Projects from './Components/Projects/Projects';
+import Archives from './Components/Archives/Archives';
 
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
           </Route>
           <Route path="/Projects">
             <Projects/>
+          </Route>
+          <Route path="/Archives">
+            <Archives/>
           </Route>
           <Route path="/">
             <Home/>

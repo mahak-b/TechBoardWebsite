@@ -3,20 +3,35 @@
 .homepage1 {
     display: flex;
     flex-direction: column;
-    background-image: url(../assests/iisc.png);
+    /* background-image: url(../assests/iisc.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%; */
     position: absolute;
     width: 100%;
     height: 100vh;
     padding-top: 2vw;
+    z-index: 4;
+}
+
+.backImgmobile1{
+    display: none;
+}
+
+.backImg1{
+    position: absolute;
     z-index: 1;
+    display: flex;
+    /* left: 42%; */
+}
+
+.backImg1 img{
+    width: 100vw;
 }
 
 .techboard-heading {
     position: absolute;
     padding-left: 8vw;
-    padding-top: 2vw;
+    padding-top: 1vw;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 800;
@@ -27,7 +42,7 @@
 .who-we-are-text {
     position: absolute;
     padding-left: 8.2vw;
-    padding-top: 6vw;
+    padding-top: 5vw;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 200;
@@ -36,6 +51,7 @@
 }
 
 .right-div {
+    z-index: 4;
     display: flex;
     justify-content: flex-end;
     position: absolute;
@@ -73,52 +89,65 @@
 
 .with-text {
     position: absolute;
-    width: 22.63vw;
+    width: 32vw;
     padding-left: 8.2vw;
-    padding-top: 12vw;
+    padding-top: 11vw;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    font-size: 0.7vw;
+    font-size: 0.9vw;
     text-align: justify;
     color: #000000;
 }
 
 .many-text {
     position: absolute;
-    width: 22.63vw;
+    width: 32vw;
     padding-left: 8.2vw;
     padding-top: 19vw;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    font-size: 0.7vw;
+    font-size: 0.9vw;
     text-align: justify;
     color: #000000;
 }
 
 .our-part-text {
     position: absolute;
-    width: 22.63vw;
+    width: 30vw;
     padding-left: 8.2vw;
-    padding-top: 25vw;
+    padding-top: 26vw;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    font-size: 0.7vw;
+    font-size: 0.9vw;
     text-align: justify;
     color: #000000;
 }
 
 @media screen and (max-width: 800px) {
     .homepage1 {
-        background-image: url(../assests/iisc2.png);
+        /* background-image: url(../assests/iisc2.png); */
         height: 100vh;
-        background-position: center ;
-        background-repeat: no-repeat;
+        /* background-position: center ;
+        background-repeat: no-repeat; */
         /* background-size: 100vw 90vh; */
-        padding-top: 0vw;
+    }
 
+    .backImg1{
+        display: none;
+    }
+
+    .backImgmobile1{
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        top: 48vw;
+    }
+    
+    .backImgmobile1 img{
+        width: 100vw;
     }
 
     .techboard-heading {
@@ -137,7 +166,7 @@
         width: 38vw;
         height: 20vw;
         left: 58vw;
-        top: 119vw;
+        top: 108vw;
     }
 
     .archives-text {
@@ -156,17 +185,19 @@
     }
 
     .with-text {
-        width: 50vw;
+        width: 60vw;
         padding-left: 8.2vw;
         padding-top: 25vw;
         font-size: 2.5vw;
+        z-index: 4;
     }
 
     .many-text {
-        width: 50vw;
+        width: 60vw;
         padding-left: 8.2vw;
-        padding-top: 65vw;
+        padding-top: 58vw;
         font-size: 2.5vw;
+        z-index: 4;
     }
 
     .our-part-text {
