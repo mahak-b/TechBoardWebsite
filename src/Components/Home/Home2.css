@@ -4,15 +4,31 @@
     display: flex;
     flex-direction: column;
     /* top: 110vh; */
-    background-image: url(../assests/Untitled-2.png);
+    /* background-image: url(../assests/Untitled-2.png);
     background-repeat: no-repeat;
     background-position: center;
-    /* background-size: 100%; */
+    background-size: 20%; */
     position: relative;
     /* width: 100%; */
     height: 100vh;
-    z-index: 1;
+    z-index: 4;
     top: 100vh;
+    padding-top: 5vw;
+}
+
+.backImgmobile2{
+    display: none;
+}
+
+.backImg2{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    left: 42%;
+}
+
+.backImg2 img{
+    width: 22vw;
 }
 
 .projects-heading {
@@ -27,6 +43,7 @@
 }
 
 .right-div-1 {
+    z-index: 4;
     display: flex;
     justify-content: flex-end;
     position: absolute;
@@ -65,68 +82,82 @@
 
 .with-text-1 {
     position: absolute;
-    width: 22.63vw;
+    width: 30vw;
     padding-left: 8.2vw;
     padding-top: 12vw;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    font-size: 0.7vw;
+    font-size: 0.9vw;
     text-align: justify;
     color: #000000;
 }
 
 .many-text-1 {
     position: absolute;
-    width: 22.63vw;
+    width: 30vw;
     padding-left: 8.2vw;
-    padding-top: 19vw;
+    padding-top: 20vw;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    font-size: 0.7vw;
+    font-size: 0.9vw;
     text-align: justify;
     color: #000000;
 }
 
 .our-part-text-1 {
     position: absolute;
-    width: 22.63vw;
+    width: 30vw;
     padding-left: 8.2vw;
-    padding-top: 25vw;
+    padding-top: 27vw;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    font-size: 0.7vw;
+    font-size: 0.9vw;
     text-align: justify;
     color: #000000;
 }
 
 @media screen and (max-width: 800px) {
     .homepage2 {
-        background-image: url(../assests/Untitled-21.png);
+        /* background-image: url(../assests/Untitled-21.png); */
         height: 100vh;
         /* background-position: center calc(80% - 0vw); */
-        background-position: left;
+        /* background-position: left; */
         /* background-position-x: -35vw; */
-        background-repeat: no-repeat;
+        /* background-repeat: no-repeat; */
         /* background-size: 100vw 90vh; */
         padding-top: 0vw;
         top: 52vh;
 
     }
+    .backImg2{
+        display: none;
+    }
+
+    .backImgmobile2{
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        top: 48vw;
+    }
+    
+    .backImgmobile2 img{
+        width: 40vw;
+    }
 
     .projects-heading {
         padding-left: 35vw;
-        padding-top: 55vw;
+        padding-top: 60vw;
         font-size: 8vw;
     }
 
     .right-div-1 {
-        width: 55vw;
+        width: 40vw;
         height: 25vw;
         left: 7vw;
-        top: 127vw;
+        top: 138vw;
     }
 
     .ind-text {
@@ -147,14 +178,14 @@
     .with-text-1 {
         width: 58vw;
         padding-left: 35vw;
-        padding-top: 65vw;
+        padding-top: 70vw;
         font-size: 2.5vw;
     }
 
     .many-text-1 {
         width: 58vw;
         padding-left: 35vw;
-        padding-top: 98vw;
+        padding-top: 103vw;
         font-size: 2.5vw;
     }
 
