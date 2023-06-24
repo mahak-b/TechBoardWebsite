@@ -1,0 +1,279 @@
+.homepage5 {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-heading {
+    position: relative;
+    padding-left: 8.2vw;
+    padding-top: 5vw;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4.4vw;
+    color: #000000;
+}
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.news-card-1 img {
+    filter: brightness(30%);
+    z-index: 1;
+}
+
+.news-card-2 img {
+    filter: brightness(50%);
+    z-index: 1;
+}
+
+.news-card-2 {
+    display: flex;
+    gap: 1vw;
+}
+
+.news-card-1-text {
+    position: absolute;
+    color: #FFF;
+    font-size: 4vw;
+    font-family: Roboto;
+    font-weight: 900;
+    font-variant: all-small-caps;
+    z-index: 4;
+    width: 2vw;
+    padding-top: 5vw;
+}
+
+.news-card-2-text {
+    position: absolute;
+    color: #FFF;
+    font-size: 64px;
+    font-family: Roboto;
+    font-weight: 900;
+    font-variant: all-small-caps;
+    z-index: 4;
+    padding-top: 5vw;
+}
+
+.news-card-3-text {
+    position: absolute;
+    color: #FFF;
+    font-size: 64px;
+    font-family: Roboto;
+    font-weight: 900;
+    font-variant: all-small-caps;
+    z-index: 4;
+    width: 2vw;
+    padding-top: 3vw;
+}
+
+.news-title-card img {
+    width: 100%;
+}
+
+.news-title-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.news-title-card-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-title-card-description-text {
+    color: #000;
+    font-size: 3vw;
+    font-family: Roboto;
+    font-weight: 600;
+    font-variant: all-small-caps;
+}
+
+.newstitles {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.news-content {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 8.2vw;
+    padding-right: 8.2vw;
+    gap: 5%;
+}
+
+.plus-button-img {
+    background-image: url("../assests/circle.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.8%;
+    padding-top: 2vw;
+    border-radius: 100%;
+    left: 36vw;
+    top: 195vw;
+    /* width: 0.1vw; */
+    z-index: 4;
+}
+
+
+
+.plus-button {
+    background-image: url("../assests/circle.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 3vw; */
+    border-radius: 100%;
+    width: 2vw;
+    height: 1.5vw;
+}
+
+.plus {
+    max-width: 100%;
+    border: none;
+    background: none;
+    position: absolute;
+    cursor: pointer;
+}
+
+.plus img {
+    display: flex;
+    align-items: center;
+    width: 1vw;
+    height: auto;
+}
+
+.newsimg1mobile {
+    display: none;
+}
+
+.newsimg2mobile {
+    display: none;
+}
+
+.news-card-2b-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .homepage5 {
+        gap: 5vw;
+    }
+
+    .news-heading {
+        padding-left: 8.2vw;
+        padding-top: 12vw;
+        font-size: 8.5vw;
+    }
+
+    .newsimg1 {
+        display: none;
+    }
+
+    .newsimg1mobile {
+        display: flex;
+        width: 100%;
+    }
+
+    .newsimg2 {
+        display: none;
+    }
+
+    .newsimg2mobile {
+        display: flex;
+        width: 100%;
+    }
+
+    .news-card-2b {
+        display: none;
+    }
+
+    .news-content {
+        flex-direction: column;
+        gap: 5vw;
+    }
+
+    .news-card-1-text {
+        font-size: 5vw;
+        font-family: Roboto;
+        font-weight: 900;
+        width: 100%;
+        padding-top: 12vw;
+    }
+
+    .news-card-2-text {
+        font-size: 5vw;
+        font-family: Roboto;
+        font-weight: 900;
+        width: 100%;
+        padding-top: 12vw;
+    }
+
+    .news-title-card-description-text {
+        font-size: 4vw;
+        width: 80vw;
+    }
+
+    .news-card-2b-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1vw;
+        border-style: solid;
+        border-color: #000;
+        margin: 1% 7%;
+        padding: 3% 0%;
+        background-color: black;
+        color: white;
+        z-index: 1;
+        gap: 2%;
+    }
+
+    .plus-button-img-mobile {
+        z-index: 4;
+        background-image: url("../assests/circle.png");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* padding: 3vw; */
+        border-radius: 100%;
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .plus-mobile {
+        max-width: 100%;
+        border: none;
+        background: none;
+        position: absolute;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .plus-mobile img {
+        display: flex;
+        align-items: center;
+        width: 2vw;
+        height: auto;
+    }
+}
