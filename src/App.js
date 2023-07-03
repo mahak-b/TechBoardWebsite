@@ -7,6 +7,7 @@ import Home from './Components/Home/Home';
 import AlumniTeam from './Components/Alumni and Team/AlumniTeam'
 import { BrowserRouter as Router, Route,Switch } from 'react-router-dom';
 import Projects from './Components/Projects/Projects';
+import Archives from './Components/Archives/Archives';
 
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route path="/Projects">
             <Projects/>
+          </Route>
+          <Route path="/Archives">
+            <Archives/>
           </Route>
           <Route path="/Team">
             <AlumniTeam/>

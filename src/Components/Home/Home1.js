@@ -1,10 +1,18 @@
 import React from 'react';
 import arrow from '../assests/Group9670.png';
 import './Home1.css';
+import backimg1 from '../assests/iisc.png'
+import backimgmobile1 from '../assests/iisc2.png'
 
 const Home1 = () => {
     return (
         <div className='homepage1'>
+            <div className="backImg1">
+                <img src={backimg1} alt="" />
+            </div>
+            <div className="backImgmobile1">
+                <img src={backimgmobile1} alt="" />
+            </div>
             <div>
                 <div>
                     <div className='techboard-heading'>TECHBOARD.</div>
