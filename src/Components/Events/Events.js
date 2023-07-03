@@ -1,16 +1,19 @@
+import {useState, useEffect} from  "react";
 import "./Events.css";
 
 const Events = () => {
-    const [expandedClubId, setExpandedClubId] = useState(null);
+    const [Events,setEvents]= useState();
+    const [expandedEventId, setExpandedEventId] = useState(null);
 
     const toggleClubDetails = (id) => {
     if (expandedClubId === id) {
-        setExpandedClubId(null);
+        setExpandedEventId(null);
     } 
     else {
-        setExpandedClubId(id);
+        setExpandedEventId(id);
     }
     };
+
     return (
         <div>
             <div className="events-header">
