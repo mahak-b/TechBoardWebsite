@@ -1,0 +1,63 @@
+@import url('http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900');
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+.at-header{
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 7vw;
+    padding:5% 0%;
+    overflow-x: hidden;
+    word-spacing: 4.5vw;
+    white-space: nowrap;
+}
+.at-line{
+    position: relative;
+    right: 7vw;
+}
+.at-header::before{
+    position: relative;
+    content: " ";
+  }
+.chairman{
+    display: flex;
+    border-top:0.2vw solid black ;
+    margin:0% 7%;
+}
+.chairman-details{
+    padding: 7%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Inter";
+    font-size: 1.2vw;
+}
+.chairman-img{
+    height: 25vw;
+}
+.chairman-tab{
+    padding: 5%;
+    font-family: 'Roboto';
+}
+.chairman-data{
+    width: 45vw;
+    font-weight: 500;
+    font-size: 1.2vw;
+}
+.chairman-title{
+    font-weight: 900;
+    font-size: 3.75vw;
+}
+.team-name{
+    border-top:0.2vw solid black ;
+    margin:0% 7%;
+}
+@media only screen and (max-width: 430px) {
+    .at-header::before{
+        content: "TEAM ALUMNI TEAM ALUMNI ";
+        left: 6vw;
+      }
+      .at-line{
+        right: 9vw;
+      }
+}
+
