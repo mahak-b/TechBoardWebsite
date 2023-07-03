@@ -3,29 +3,36 @@ import plus from "../assests/plus.png";
 import minus from "../assests/minus.png";
 import arrow from "../assests/arrow.png";
 import newsImage from "../assests/news.png";
+import sanityClient from "../../client";
 import "./news.css";
 
 const News = () => {
-    const [news, setNews] = useState(null);
-    const [error,setError]=useState(null);
+    const [news, setNews] = useState();
+
     useEffect(() => {
-        fetch('http://localhost:8000/news')
-            .then(res=>{
-                console.log(res);
-                if(!res.ok){
-                    throw Error('could not fetch the data for that resource');
-                }
-                return res.json();
-            })
-            .then(data=>{
-                console.log(data);
-                setNews(data);
-                setError(null);
-            })
-            .catch(err=>{
-                setError(err.message);  
-            })
-      }, []);
+        sanityClient
+			.fetch(
+				`*[_type == "news"]{
+                    title,
+                    id,
+                    date,
+                    sdata,
+                    ldata,
+                    img{
+                        asset->{
+                            _id,
+                            url,
+                        },
+                        alt
+                    }
+                }`
+			)
+			.then((data) =>{ setNews(data)})
+			.catch(console.error);
+       
+    
+      },[])
+
       const [expandedClubId, setExpandedClubId] = useState(null);
     //   const[imgstyle,setImgStyle]=useState("new-img");
       const toggleClubDetails = (id) => {
@@ -42,7 +49,6 @@ const News = () => {
             <div className="news-header">
                 <div className="news-line">NEWS  NEWS  NEWS  NEWS</div>
             </div>
-            {error && <div>{error}</div>}
             {news && news.map((item)=>
             <div className="club-name" key={item.id}>
                 <div className="news-preview">
