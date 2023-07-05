@@ -1,0 +1,27 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+.events-header{
+  position: relative;
+  font-family: 'Roboto';
+  font-weight: 800;
+  font-size: 7vw;
+  padding:5% 0%;
+  overflow-x: hidden;
+  word-spacing: 7vw;
+}
+
+.events-header-firstline{
+    position: relative;
+    left: 8vw;
+}
+
+.events-header-secondline{
+    white-space: nowrap;
+    position: relative;
+    right:10.5vw;
+}
+
+@media only screen and (max-width: 430px) {
+.events-header{
+  padding-top: 0%;
+}
+}

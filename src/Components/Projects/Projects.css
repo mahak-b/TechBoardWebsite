@@ -6,7 +6,7 @@
   font-size: 8vw;
   padding:5% 0%;
   overflow-x: hidden;
-  word-spacing: 3vw;
+  word-spacing: 8vw;
 }
 .project-first-line{
   position: relative;
@@ -77,14 +77,22 @@
   position: relative;
   padding-bottom: 5%;
 }
+.project-imgage-container{
+  display: flex;
+  flex-direction: row;
+}
+.project-imgage-container-1{
+  display: flex;
+  flex-direction: column;
+}
 .project-img1{
   height: 20vw;
 }
 .project-img2{
-    height: 40vw;
+  height: 40vw;
 }
 .project-img3{
-    height: 20vw;
+  height: 20vw;
 }
 .project-blank{
   position: absolute;

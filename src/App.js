@@ -7,6 +7,8 @@ import Home from './Components/Home/Home';
 import AlumniTeam from './Components/Alumni and Team/AlumniTeam'
 import { BrowserRouter as Router, Route,Switch } from 'react-router-dom';
 import Projects from './Components/Projects/Projects';
+import DotLink from './Components/DotLink/DotLink';
+import Events from './Components/Events/Events';
 import Archives from './Components/Archives/Archives';
 
 
@@ -19,12 +21,18 @@ function App() {
           <Route path="/Club">
             <Club/>
           </Route>
+          <Route path="/Events">
+            <Events/>
+          </Route>
           <Route path="/News">
             <News/>
           </Route>
           <Route path="/Projects">
             <Projects/>
           </Route>
+
+          <Route path="/DotLink">
+            <DotLink/>
           <Route path="/Archives">
             <Archives/>
           </Route>
