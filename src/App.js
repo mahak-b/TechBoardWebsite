@@ -4,6 +4,7 @@ import Club from './Components/Club/Club';
 import News from './Components/News/News';
 import Footer from './Components/Home/footer.js';
 import Home from './Components/Home/Home';
+import AlumniTeam from './Components/Alumni and Team/AlumniTeam'
 import { BrowserRouter as Router, Route,Switch } from 'react-router-dom';
 import Projects from './Components/Projects/Projects';
 import Archives from './Components/Archives/Archives';
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route path="/Archives">
             <Archives/>
+          </Route>
+          <Route path="/Team">
+            <AlumniTeam/>
           </Route>
           <Route path="/">
             <Home/>
