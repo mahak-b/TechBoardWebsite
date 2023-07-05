@@ -4,14 +4,30 @@
     display: flex;
     flex-direction: column;
     top: 90vh;
-    background-image: url(../assests/jorge-rojas.png);
+    /* background-image: url(../assests/jorge-rojas.png);
     background-repeat: no-repeat;
     background-position: center;
-    /* background-size: 100%; */
+    background-size: 30%; */
     position: relative;
     /* width: 100%; */
     height: 100vh;
+    /* z-index: 4; */
+    margin-bottom: 43vw;
+}
+
+.backImgmobile3 {
+    display: none;
+}
+
+.backImg3 {
+    position: absolute;
     z-index: 1;
+    display: flex;
+    left: 35%;
+}
+
+.backImg3 img {
+    width: 32vw;
 }
 
 .inter-heading {
@@ -23,6 +39,7 @@
     font-weight: 200;
     font-size: 4vw;
     color: black;
+    z-index: 4;
 }
 
 .techmeet-text {
@@ -45,6 +62,7 @@
     left: 46vw;
     top: 5vw;
     background: rgba(255, 245, 10, 0.6);
+    z-index: 10;
 }
 
 .problem-statement-text {
@@ -75,39 +93,39 @@
 
 .catered-text {
     position: absolute;
-    width: 22.63vw;
+    width: 30vw;
     padding-left: 8.2vw;
     padding-top: 12vw;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    font-size: 0.7vw;
+    font-size: 0.9vw;
     text-align: justify;
     color: #000000;
 }
 
 .with-pandemic-text {
     position: absolute;
-    width: 22.63vw;
+    width: 30vw;
     padding-left: 8.2vw;
-    padding-top: 17vw;
+    padding-top: 18vw;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    font-size: 0.7vw;
+    font-size: 0.9vw;
     text-align: justify;
     color: #000000;
 }
 
 .contigent-text {
     position: absolute;
-    width: 22.63vw;
+    width: 30vw;
     padding-left: 8.2vw;
-    padding-top: 23vw;
+    padding-top: 25vw;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    font-size: 0.7vw;
+    font-size: 0.9vw;
     text-align: justify;
     color: #000000;
 }
@@ -142,34 +160,52 @@
 
 @media screen and (max-width: 800px) {
     .homepage3 {
-        background-image: url(../assests/jorge-rojas--2.png);
+        /* background-image: url(../assests/jorge-rojas--2.png); */
         height: 100vh;
         /* background-position: center calc(80% - 0vw); */
-        background-position: right top;
+        /* background-position: right top;
         background-position-y: 20vw;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; */
         /* background-size: 50vw 90vh; */
         padding-top: 0vw;
         top: 25vh;
+        margin-bottom: 20vw;
     }
+
+    .backImg3 {
+        display: none;
+    }
+
+    .backImgmobile3 {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        top: 48vw;
+        right: 0%;
+    }
+
+    .backImgmobile3 img {
+        width: 40vw;
+    }
+
 
     .inter-heading {
         padding-left: 8vw;
-        padding-top: 30vw;
+        padding-top: 60vw;
         font-size: 8vw;
     }
 
     .techmeet-text {
         padding-left: 8.2vw;
-        padding-top: 38vw;
+        padding-top: 68vw;
         font-size: 8.5vw;
     }
 
     .right-div-2 {
-        width: 40vw;
+        width: 35vw;
         height: 23vw;
-        left: 53vw;
-        top: 115vw;
+        left: 58vw;
+        top: 132vw;
     }
 
     .problem-statement-text {
@@ -193,7 +229,7 @@
         display: flex;
         width: 50vw;
         padding-left: 8.2vw;
-        padding-top: 50vw;
+        padding-top: 80vw;
         font-size: 2.5vw;
     }
 
@@ -201,18 +237,18 @@
         display: flex;
         width: 50vw;
         padding-left: 8.2vw;
-        padding-top: 80vw;
+        padding-top: 110vw;
         font-size: 2.5vw;
     }
 
-    .catered-text{
+    .catered-text {
         display: none;
     }
-    
-    .with-pandemic-text{
+
+    .with-pandemic-text {
         display: none;
     }
-    
+
     .contigent-text {
         display: none;
     }

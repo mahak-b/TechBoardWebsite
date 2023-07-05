@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home4.css';
+import './footer.css';
 import hline from '../assests/Vector 55.png';
 import vline from '../assests/vertical-line.png';
 import iitglogo from '../assests/IITG_logo (2) 8.png';
