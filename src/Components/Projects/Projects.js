@@ -73,6 +73,9 @@ const Projects = () => {
                         </div>
                     </div>
                     {expandedProjectId === project.id && (<div className="project-overview">
+                        {/* <div className="project-clubname">
+                            <header>{project.club}</header>
+                        </div> */}
                         <div className="project-data">
                             <p>{project.content}</p>
                         </div>
