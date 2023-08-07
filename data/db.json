@@ -49,37 +49,85 @@
             "position":"General Secretary",
             "name": "ALFAS KHADER",
             "branch":"DEPT. OF DESIGN",
+            "year":2022,
             "id":1
         },
         {
             "position":"MEMBER",
             "name": "ALFAS KHADER",
             "branch":"DEPT. OF DESIGN",
+            "year":2022,
             "id":2
         },
         {
             "position":"MEMBER",
             "name": "ALFAS KHADER",
             "branch":"DEPT. OF DESIGN",
+            "year":2022,
             "id":3
         },
         {
             "position":"MEMBER",
             "name": "ALFAS KHADER",
             "branch":"DEPT. OF DESIGN",
+            "year":2022,
             "id":4
         },
         {
             "position":"MEMBER",
             "name": "ALFAS KHADER",
             "branch":"DEPT. OF DESIGN",
+            "year":2022,
             "id":5
         },
         {
             "position":"MEMBER",
             "name": "ALFAS KHADER",
             "branch":"DEPT. OF DESIGN",
+            "year":2022,
             "id":6
+        },
+        {
+            "position":"General Secretary",
+            "name": "ALFAS KHADER",
+            "branch":"DEPT. OF DESIGN",
+            "year":2021,
+            "id":7
+        },
+        {
+            "position":"MEMBER",
+            "name": "ALFAS KHADER",
+            "branch":"DEPT. OF DESIGN",
+            "year":2021,
+            "id":8
+        },
+        {
+            "position":"MEMBER",
+            "name": "ALFAS KHADER",
+            "branch":"DEPT. OF DESIGN",
+            "year":2021,
+            "id":9
+        },
+        {
+            "position":"MEMBER",
+            "name": "ALFAS KHADER",
+            "branch":"DEPT. OF DESIGN",
+            "year":2021,
+            "id":10
+        },
+        {
+            "position":"General Secretary",
+            "name": "ALFAS KHADER",
+            "branch":"DEPT. OF DESIGN",
+            "year":2020,
+            "id":10
+        },
+        {
+            "position":"MEMBER",
+            "name": "ALFAS KHADER",
+            "branch":"DEPT. OF DESIGN",
+            "year":2020,
+            "id":11
         }
     ],
     "team":
@@ -119,6 +167,6 @@
             "name": "ALFAS KHADER",
             "branch":"DEPT. OF DESIGN",
             "id":6
-        } 
+        }
     ]
 }

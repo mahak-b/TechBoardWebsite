@@ -6,7 +6,7 @@ import "./alumni.css";
 // import Team from "./Team.js";
 
 const Alumni = () => {
-    const [periods,setPeriods]=useState([{"year":"2022","id":1},{"year":"2021","id":2},{"year":"2020","id":3}])
+    const [periods,setPeriods]=useState([{"year":2022,"id":1},{"year":2021,"id":2},{"year":2020,"id":3}]);
     const[alumnis,setAlumnis]=useState(null);
     const [error,setError]=useState(null);
     useEffect(() => {
@@ -36,6 +36,9 @@ const Alumni = () => {
           setExpandedClubId(id);
         }
       };
+      const filterAlumniByYear = (year) => {
+        return alumnis && alumnis.filter((alumni) => alumni.year === year);
+      };
     return ( 
         <div className="alumni-list">
             {periods.map((period)=>(
@@ -49,13 +52,14 @@ const Alumni = () => {
                         </div>
                     </div>
                     {expandedClubId === period.id && error && <div>{error}</div>}
-                    {expandedClubId === period.id && (<div className="alumni-overview">
-                        {alumnis && alumnis.map((alumni)=>(
+                    {expandedClubId === period.id && alumnis && 
+                    (<div className="alumni-overview">
+                        {filterAlumniByYear(period.year).map((alumni) => (
                             <div className="alumni-data" key={alumni.id}>
                                 <div className="alumni-details">
                                     <div className="alm-pos">
                                         {alumni.position}
-                                        <sup className="alm-year">{period.year}</sup>
+                                        <sup className="alm-year">{alumni.year}</sup>
                                     </div>
                                     <div className="alumni-image">
                                         <img src={alumniImage} className="alumni-img" alt="" />
