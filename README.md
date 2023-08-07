@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+**TechBoard Website**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the TechBoard Website project! This repository contains the codebase for the TechBoard website developed by our team at IIT Guwahati. The website aims to offer a comprehensive overview of the Technical Board and its affiliated clubs, showcasing their activities, projects, achievements, and major events hosted by TechBoard.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Introduction](#introduction)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The TechBoard Website is designed to provide a user-friendly and informative platform for the Technical Board and its clubs. It allows club representatives to manage their respective profiles, add and update their activities, projects, and achievements. Additionally, the website highlights significant events hosted by TechBoard, such as Kriti and the Inter-Hostel Technical Competition.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Comprehensive Club Profiles:** Each club has a dedicated profile page with detailed information about their activities, ongoing projects, and notable achievements.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Highlighted Events:** The website showcases major events hosted by TechBoard, providing information about upcoming and past events.
 
-### `npm run build`
+- **Seamless Content Management:** The website's content is managed through Sanity.io CMS, allowing for easy updates and real-time collaboration.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Responsive Design:** The website is fully responsive, ensuring a consistent and user-friendly experience across various devices.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Version Control:** Sanity.io's version control enables tracking content changes and provides the ability to revert to previous versions when needed.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Scalability:** The website is designed to accommodate future additions of clubs and events, ensuring scalability as the TechBoard community grows.
 
-### `npm run eject`
+## Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The TechBoard Website is built using the following technologies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Frontend:
+  - HTML
+  - CSS
+  - JavaScript
+  - ReactJs
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Backend:
+  - Sanity.io CMS
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Installation
 
-## Learn More
+To run the website locally, follow these steps:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone this repository to your local machine using `git clone https://github.com/TechBoardWebsite.git`
+2. Navigate to the project directory: `cd TechBoardWebsite`
+3. Install the required dependencies: `npm install`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage
 
-### Code Splitting
+To start the development server and view the website on your local machine:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm start
+```
 
-### Analyzing the Bundle Size
+The website will be accessible at `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+We welcome contributions to improve the TechBoard website. If you find any issues or have suggestions for new features, please feel free to open an issue or submit a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Before making any contributions, please read our [Contribution Guidelines](CONTRIBUTING.md) to ensure a smooth collaboration process.
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The TechBoard Website project is open-source and available under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for showing interest in the TechBoard Website project. We hope this platform effectively showcases the Technical Board and its clubs while providing a valuable resource for users. If you have any questions or need further assistance, please don't hesitate to contact us. Happy exploring!
