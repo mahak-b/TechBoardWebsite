@@ -33,6 +33,7 @@ function App() {
 
           <Route path="/DotLink">
             <DotLink/>
+          </Route>
           <Route path="/Archives">
             <Archives/>
           </Route>
