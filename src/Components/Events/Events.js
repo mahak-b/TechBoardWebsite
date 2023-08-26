@@ -6,7 +6,7 @@ const Events = () => {
     const [expandedEventId, setExpandedEventId] = useState(null);
 
     const toggleClubDetails = (id) => {
-    if (expandedClubId === id) {
+    if (expandedEventId === id) {
         setExpandedEventId(null);
     } 
     else {
