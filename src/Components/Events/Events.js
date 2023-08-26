@@ -17,7 +17,7 @@ const Events = () => {
     return (
         <div>
             <div className="events-header">
-                <div className="events-header-firstline">   TECHEVINCE KRITI TECH</div>
+                <div className="events-header-firstline">   TECHEVINCE KRITI </div>
                 <div className="events-header-secondline">TECHNICHE UDGAM TECHNICHE</div>
             </div>
             

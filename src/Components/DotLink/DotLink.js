@@ -21,7 +21,6 @@ const DotLink = () => {
                     </p>
                 </div>
             </div>
-            
         </div>
       );
 }

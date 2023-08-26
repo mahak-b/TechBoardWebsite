@@ -6,7 +6,7 @@ const Team = () => {
     const[teams,setTeams]=useState(null);
     const [error,setError]=useState(null);
     useEffect(() => {
-        fetch('http://localhost:8000/alumni')
+        fetch('http://localhost:8000/team')
             .then(res=>{
                 console.log(res);
                 if(!res.ok){
