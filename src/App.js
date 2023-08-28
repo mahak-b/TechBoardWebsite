@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import Club from './Components/Club/Club';
@@ -10,6 +11,7 @@ import Projects from './Components/Projects/Projects';
 import DotLink from './Components/DotLink/DotLink';
 import Events from './Components/Events/Events';
 import Archives from './Components/Archives/Archives';
+
 
 
 function App() {
