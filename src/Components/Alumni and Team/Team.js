@@ -2,26 +2,30 @@ import chairmanImage from "../assests/chairman.png";
 import { useState,useEffect } from "react";
 import teamImage from "../assests/team.png";
 import "./team.css";
+import sanityClient from "../../client";
 const Team = () => {
     const[teams,setTeams]=useState(null);
     const [error,setError]=useState(null);
     useEffect(() => {
-        fetch('http://localhost:8000/team')
-            .then(res=>{
-                console.log(res);
-                if(!res.ok){
-                    throw Error('could not fetch the data for that resource');
-                }
-                return res.json();
-            })
-            .then(data=>{
-                console.log(data);
-                setTeams(data);
-                setError(null);
-            })
-            .catch(err=>{
-                setError(err.message);  
-            })
+        sanityClient
+			.fetch(
+				`*[_type == "team"]{
+                    name,
+                    id,
+                    branch,
+                    position,
+                    img{
+                        asset->{
+                            _id,
+                            url,
+                        },
+                        alt
+                    }
+                }`
+			)
+			.then((data) =>{ setTeams(data);
+            console.log(data);})
+			.catch(console.error);
       }, []);
       const [expandedClubId, setExpandedClubId] = useState(null);
 
@@ -71,7 +75,7 @@ const Team = () => {
                                 <div className="alm-pos">
                                     {team.position}                                </div>
                                 <div className="alumni-image">
-                                    <img src={teamImage} className="alumni-img" alt="" />
+                                    <img src={team.img.asset.url} className="alumni-img" alt="" />
                                 </div>
                                 <div className="alm-name">
                                     {team.name}<br/>

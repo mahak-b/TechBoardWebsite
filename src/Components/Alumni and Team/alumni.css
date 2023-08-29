@@ -25,6 +25,7 @@
 }
 .alumni-image{
     padding-top: 5%;
+    filter: grayscale(100%);
 }
 .alumni-img{
     height: 25vw;

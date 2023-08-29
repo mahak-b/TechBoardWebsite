@@ -79,6 +79,7 @@
 }
 .club-img{
   height: 50vw;
+  filter: grayscale(100%);
 }
 .club-blank{
   position: absolute;
