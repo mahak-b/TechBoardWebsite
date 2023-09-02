@@ -21,7 +21,7 @@ const Home1 = () => {
                 <div className='right-div'>
                     <div className='archives-text'>ARCHIVES.</div>
                     <div className='explore-text'>
-                        <div>EXPLORE</div>
+                        <a href='/archives'><div >EXPLORE</div></a>
                         <img src={arrow} alt='' />
                     </div>
                 </div>

@@ -19,6 +19,11 @@ export default {
         title: 'Content'
       },
       {
+        name: 'link',
+        type: 'string',
+        title: 'Link'
+      },
+      {
         name: 'img',
         type: 'image',
         title:'Images'

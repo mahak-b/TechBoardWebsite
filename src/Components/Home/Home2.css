@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
-a{
-    text-decoration: none;
-    color: #FFFFFF;
-}
+
 .homepage2 {
     display: flex;
     flex-direction: column;

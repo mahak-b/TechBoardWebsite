@@ -17,6 +17,7 @@ const Club = () => {
                     club_name,
                     id,
                     content,
+                    link,
                     img{
                         asset->{
                             _id,
@@ -67,7 +68,7 @@ const Club = () => {
                                     VISIT<br/>WEBSITE.
                                 </div>
                                 <div className="club-explore-box">
-                                    <div className="club-explore">EXPLORE</div>
+                                    <a href={club.link}><div className="club-explore">EXPLORE</div></a>
                                     <button>
                                         <img src={arrow} alt=""/>  
                                     </button>

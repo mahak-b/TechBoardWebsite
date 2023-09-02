@@ -91,6 +91,7 @@
   align-items: flex-end;
   justify-content: space-between;
   top:8.75vw;
+  z-index: 10;
 }
 .club-visit{
   font-family: "Roboto";
@@ -143,6 +144,7 @@
     height:10vw;
     top:45vw;
     left:3vw;
+    z-index: 10;
   }
   .club-visit{
     font-size: 2vw;
