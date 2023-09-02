@@ -1,6 +1,5 @@
 import chairmanImage from "../assests/chairman.png";
 import { useState,useEffect } from "react";
-import teamImage from "../assests/team.png";
 import "./team.css";
 import sanityClient from "../../client";
 const Team = () => {

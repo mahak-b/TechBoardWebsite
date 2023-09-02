@@ -21,7 +21,7 @@ const Home2 = () => {
                 <div className="right-div-1">
                     <div className='ind-text'>INDUSTRY SPONSORED PROJECTS.</div>
                     <div className='explore-text-1'>
-                        <div>EXPLORE</div>
+                        <a href='/projects'><div >EXPLORE</div></a>
                         <img src={arrow1} alt='' />
                     </div>
                 </div>
