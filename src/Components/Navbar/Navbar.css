@@ -1,4 +1,11 @@
-.navbar{
+.block{
+    height: fit-content;
+    position: sticky !important;
+    top:0%;
+    background-color: white;
+    z-index: 10;
+}
+.navbar-full{
     position: sticky !important;
     top:0%;
     height: 86px;
@@ -42,8 +49,8 @@
     position: sticky !important;
     top:0%;
     height: 86px;
-    /* margin: 8px 50px; */
-    gap: 30%;
+    margin: 8px 50px;
+    gap: 20%;
     z-index: 99999;
     width: 100%;
     display: flex;
@@ -67,48 +74,7 @@
     margin-right: 20px;
 }
 
-#dropdown-basic-button{
-    border: none;
-    width: 100px;
-    color:black;
-    background-color:transparent;
-    font-size: 18px;
-}
-.dropdown{
-    width: 5px;
-    margin-top: -6px;
-    margin-left: -20px;
-    margin-right: 20px;
-    background-color: white;
-}
 
-.dropdown-item{
-    color:black;
-}
-#dropdown-basic-button:hover{
-    font-style: italic;
-    font-weight: bold;
-    font-stretch: expanded;
-    
-}
-.dropdown-menu{
-    background-color: white;
-    border: none;
-}
-.dropdown-item:hover{
-    background-color:transparent;
-    font-style: italic;
-    font-weight: bold;
-    font-stretch: expanded;
-    color: black;
-}
-.dropdown-toggle{
-    display: flex;
-    background-color: white;
-}
-.dropdown-toggle::after{
-    display: none;
-}
 
 .extra-items{
     display: flex;
@@ -118,10 +84,64 @@
     gap: 20px;
 }
 
+.navbar{
+    position: relative;
+}
+
+button {
+    cursor: pointer;
+    background: transparent;;
+    border: none;
+    font-size: 20px;
+  }
+  
+  .navbar .toggle {
+    position: fixed;
+    left: 30px;
+    top: 40px;
+    cursor: pointer;
+    background: transparent;;
+    border: none;
+  }
+  
+  .menu-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: #fff;
+    left: -4rem;
+    top:1rem;
+    width: 0;
+    overflow: hidden;
+    max-width: 290px;
+    z-index: 9;
+    font-size: 18px;
+    box-shadow: 0 10px 15px -3px rgb(46 41 51 / 8%), 0 4px 6px -2px rgb(71 63 79 / 16%);
+    display: none;
+    transform: translateX(-100px);
+    transition: transform ease-in-out 0.2s;
+    /* transition: width ease 0.2s; */
+  }
+  
+  .menu-nav.show-menu {
+    display: flex;
+    width: 10rem;
+    transform: translateX(0px);
+  }
+  .menu-links{
+    color: black;
+    padding: 1rem;
+  }
+
+  .menu-nav li a, .menu-nav li span {
+    display: block;
+    padding: 1rem;
+    color: black;
+  }
+
 @media screen and (max-width: 800px) {
-    .navbar{
-        gap: 10%;
-    }
+    
     #logo{
         max-width: 60px;
         position: relative;

@@ -1,15 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from "react-router-dom";
-import { Squash as Hamburger } from 'hamburger-react'
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
+import { MdClose } from 'react-icons/md';
+import { FiMenu } from 'react-icons/fi';
 import './Navbar.css';
 export default function Navbar() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth)
-
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
   useEffect(() => {
-
+    setNavbarOpen(false);
     const changeWidth = () => {
       setScreenWidth(window.innerWidth);
     }
@@ -23,9 +22,9 @@ export default function Navbar() {
 
 
   return (
-    <div>
+    <div className='block'>
               
-      {(screenWidth > 800) && (<div className='navbar'>
+      {(screenWidth > 800) && (<div className='navbar-full'>
       <div className='navigation'><a  href= "/" id = 'Navbar-left' className='link-item'>TECHBOARD.</a>
       <a href= "/club" className='link-item'>CLUBS</a>
       <a href= "/Events" className='link-item'>EVENTS</a>
@@ -42,16 +41,32 @@ export default function Navbar() {
       {(screenWidth <= 800) && (
       <div className='nav-mob'>
         {/* <img src = {require('../assests/navbar-left.png')} alt ="Not_found" className='link-item'></img> */}
-        <DropdownButton id="dropdown-basic-button" title={ <Hamburger size={20}/> }>
-              <Dropdown.Item  href="/">HOME</Dropdown.Item>
-              <Dropdown.Item  href="/club">CLUBS</Dropdown.Item>
-              <Dropdown.Item href="/Events">EVENTS</Dropdown.Item>
-              <Dropdown.Item href="/Dotlink">DOTLINK</Dropdown.Item>
-              <Dropdown.Item href="/News">NEWS</Dropdown.Item>
-              <Dropdown.Item href="/Team">TEAM</Dropdown.Item>
-              <Dropdown.Item href="/contact-us">CONTACT US</Dropdown.Item>
+        <nav  className="navbar">
+        <button
+          className="toggle"
+          onClick={() => setNavbarOpen((prev) => !prev)}
+        >
+          {navbarOpen ? (
+            <MdClose style={{ width: '32px', height: '32px' }} />
+          ) : (
+            <FiMenu
+              style={{
+                width: '32px',
+                height: '32px',
+              }}
+            />
+          )}
+        </button>
+        <ul className={`menu-nav${navbarOpen ? ' show-menu' : ''}`}>
+              <a  href="/" className='menu-links'>HOME</a>
+              <a  href="/club" className='menu-links'>CLUBS</a>
+              <a href="/Events" className='menu-links'>EVENTS</a>
+              <a href="/Dotlink" className='menu-links'>DOTLINK</a>
+              <a href="/News" className='menu-links'>NEWS</a>
+              <a href="/Team" className='menu-links'>TEAM</a>
               
-          </DropdownButton>
+          </ul>
+        </nav>
           <div className='navbar-right'>
           <img src = {require('../assests/NavbarRight.jpg')} alt ="Not_found"  id='logo'></img>
         </div>
