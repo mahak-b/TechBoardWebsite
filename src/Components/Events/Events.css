@@ -19,9 +19,173 @@
     position: relative;
     right:10.5vw;
 }
+.club-header{
+  position: relative;
+  font-family: 'Roboto';
+  font-weight: 800;
+  font-size: 7vw;
+  padding:5% 0%;
+  overflow-x: hidden;
+  word-spacing: 3vw;
+}
+.club-first-line{
+  position: relative;
+  left: 2.5vw;
+}
+.club-second-line{
+  white-space: nowrap;
+  position: relative;
+  right:10.5vw;
+}
+.club-name{
+  border-top:0.2vw solid black ;
+  margin:0% 7%;
+  /* margin-bottom: 5%; */
+}
+.club-preview{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto";
+  font-weight: 900;
+  padding: 2% 0%;
+  /* border-bottom:0.2vw solid black ; */
+  font-size: 3.75vw;
+  line-height: 4.25vw;
+}
+.club-name:last-child{
+  border-bottom:0.2vw solid black ;
+}
+.plus-button{
+  background-image: url("../assests/circle.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+}
+.plus{
+  max-width: 100%;
+  border: none;
+  background: none;
+  position: absolute;
+  cursor: pointer;
+}
+.plus img{
+  display: flex;
+  align-items: center;
+  width: 1vw;
+  height: auto;
+}
+.club-overview{
+  display: flex;
+  align-items: stretch;;
+  padding-bottom: 5%;
+}
+.club-data{
+  white-space: pre-wrap;
+  /* word-wrap: break-word; */
+  padding-right:5% ;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.2vw;
+  line-height: 1.5vw;
+}
+.club-image{
+  position: relative;
+  padding-bottom: 5%;
+}
+.club-img{
+  height: 50vw;
+  filter: grayscale(100%);
+}
+.club-blank{
+  position: absolute;
+  background: rgba(255, 245, 10, 0.6);
+  width: 22.5vw;
+  height:9vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  top:8.75vw;
+  z-index: 10;
+}
+.club-visit{
+  font-family: "Roboto";
+  font-size: 1.4vw;
+  font-weight: 800;
+  text-align: right;
+  padding:1.5%;
+}
+.club-explore-box{
+  background-color: black;
+  padding:3% 5% ;
+  display: flex;
+  align-items: center
+}
+.club-explore-box button{
+  background: none;
+  border: none;
+  display: flex;
+}
+.club-explore-box img{
+  width: 1.2vw;
+  height:1.2vw;
+  cursor: pointer;
+}
+.club-explore{
+  padding-right: 10%;
+  color: white;
+  font-family: "Roboto";
+  font-size: 1vw;
+  font-weight: 800;
+}
 
 @media only screen and (max-width: 430px) {
-.events-header{
-  padding-top: 0%;
+  .club-header{
+    padding-top: 0%;
+  }
+  .club-name{
+    border-top:0.2vw solid black ;
+    margin:0% 7%;
+  }
+  .club-preview{
+    padding: 3.5% 0%;
+  }
+  .club-data{
+    padding-right:8% ;
+    font-size: 1.5vw;
+  }
+  .club-blank{
+    width:18vw;
+    height:10vw;
+    top:45vw;
+    left:3vw;
+    z-index: 10;
+  }
+  .club-visit{
+    font-size: 2vw;
+    line-height:1.75vw;
+    padding-top:2.5% ;
+    }
+  .club-explore-box{
+    padding:5%;
+    padding-right: 0%;
+  }
+  .club-explore{
+    font-size: 1vw;
+    padding-right: 0%;
+    font-weight: 500;
+  }
+  .club-image{
+    position: relative;
+  }
+  .events-header{
+    padding-top: 0%;
+  }
+
 }
-}
+
